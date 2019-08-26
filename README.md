@@ -14,6 +14,8 @@
 - 通用信息类：CMessage
 - 通用可排序类：COrderable
 - 通用响应类：CResponse
+- 通用工具包：com.ddphin.base.common.util
+- 通用校验包：com.ddphin.base.common.validate
 
 ## 2. 数据库自动初始化和升级
 ```$xslt
