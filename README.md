@@ -60,7 +60,6 @@ application.yml
     ```
 - 创建目录resources/es，存放es升级文件
 - 初始化 
-<br>resources/es目录下存放 init.sql 文件
 <br>数据库中必须包含es升级记录表：es_upgrade_log
     ```$xslt
     create table es_upgrade_log
@@ -77,25 +76,25 @@ application.yml
 - 升级
 <br>resources/es目录下存放 upgrade-${version}.yml 文件
 <br>yml 格式：
-```$xslt
-upgrade:
-  index:
-    - create:
-        your_index: your_index_define
-    - aliases:
-        - add:
-            index: your_index
-            alias: your_alias
-        - remvoe:
-            index: your_index
-            alias: your_index
-    - reindex:
-        source:
-          index: your_index
-        dest:
-          index: your_index    
-    - delete: your_index                 
-```
+    ```$xslt
+    upgrade:
+      index:
+        - create:
+            your_index: your_index_define
+        - aliases:
+            - add:
+                index: your_index
+                alias: your_alias
+            - remvoe:
+                index: your_index
+                alias: your_index
+        - reindex:
+            source:
+              index: your_index
+            dest:
+              index: your_index    
+        - delete: your_index                 
+    ```
 
 ## Ali OSS 
 ```$xslt
