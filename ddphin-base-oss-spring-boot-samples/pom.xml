@@ -30,12 +30,12 @@
     <parent>
         <groupId>com.github.ddphin</groupId>
         <artifactId>ddphin-base-spring-boot</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     
-    <artifactId>ddphin-base-oss-spring-boot-sampels</artifactId>
-    <name>ddphin-base-oss-spring-boot-sampels</name>
+    <artifactId>ddphin-base-oss-spring-boot-samples</artifactId>
+    <name>ddphin-base-oss-spring-boot-samples</name>
 
 
     <dependencies>
