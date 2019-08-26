@@ -123,6 +123,7 @@ application.yml
       oss:
         appKeyId: xxxxx
         appKeySecret:  xxxxx
+        endpoint: xxxxx.aliyuncs.com
         imgBucket: xxx         # bucket
         imgHome: xxx           # 图片主目录
         imgCdn: xxx            # 图片CDN域名
