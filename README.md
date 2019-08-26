@@ -5,7 +5,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-common</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
 ```
 
@@ -14,7 +14,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
 ```
 ### 使用
@@ -35,7 +35,7 @@ application.yml
         id bigint auto_increment
             primary key,
         version varchar(32) not null,
-        status int default 0 not null comment '0:upgrading 1:success 2:failed',
+        status int default 0 not null comment '0:u**pgrading 1:success 2:failed',
         constraint db_upgrade_log_version_uindex
             unique (version)
     );
@@ -49,7 +49,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-es-spring-boot-starter</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
 ```
 - 配置
@@ -101,7 +101,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-oss-spring-boot-starter</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
 ```
 - 配置
