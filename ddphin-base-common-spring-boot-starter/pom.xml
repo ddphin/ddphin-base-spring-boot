@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ The MIT License (MIT)
   ~
@@ -32,21 +33,28 @@
         <version>1.0.5</version>
     </parent>
 
-    <artifactId>ddphin-base-db-spring-boot-autoconfigure</artifactId>
-    <name>ddphin-base-db-spring-boot-autoconfigure</name>
+    
+    <artifactId>ddphin-base-common-spring-boot-starter</artifactId>
+    <name>ddphin-base-common-spring-boot-starter</name>
+
 
     <dependencies>
         <!-- spring-boot-->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- ddphin-base-common -->
+	<dependency>
             <groupId>com.github.ddphin</groupId>
-            <artifactId>ddphin-base-db</artifactId>
+            <artifactId>ddphin-base-common</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.github.ddphin</groupId>
+            <artifactId>ddphin-base-common-spring-boot-autoconfigure</artifactId>
         </dependency>
-
     </dependencies>
 
 </project>
+

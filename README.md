@@ -1,20 +1,26 @@
 # DDphin 通用基础工具
 
-## 1. 工具类
+## 1. 通用工具类
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
-                <artifactId>ddphin-base-common</artifactId>
-                <version>1.0.4</version>
+                <artifactId>ddphin-base-common-spring-boot-starter</artifactId>
+                <version>1.0.5</version>
             </dependency>
 ```
+- 通用 HttpMessageConverter： FastJsonHttpMessageConverter
+- 通用异常处理类：CExceptionHandler
+- 通用异常类：CException
+- 通用信息类：CMessage
+- 通用可排序类：COrderable
+- 通用响应类：CResponse
 
 ## 2. 数据库自动初始化和升级
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
-                <version>1.0.4</version>
+                <version>1.0.5</version>
             </dependency>
 ```
 - 配置
@@ -55,7 +61,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-es-spring-boot-starter</artifactId>
-                <version>1.0.4</version>
+                <version>1.0.5</version>
             </dependency>
 ```
 - 配置
@@ -105,7 +111,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-oss-spring-boot-starter</artifactId>
-                <version>1.0.4</version>
+                <version>1.0.5</version>
             </dependency>
 ```
 - 配置

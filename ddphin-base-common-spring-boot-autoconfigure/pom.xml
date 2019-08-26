@@ -32,14 +32,14 @@
         <version>1.0.5</version>
     </parent>
 
-    <artifactId>ddphin-base-db-spring-boot-autoconfigure</artifactId>
-    <name>ddphin-base-db-spring-boot-autoconfigure</name>
+    <artifactId>ddphin-base-common-spring-boot-autoconfigure</artifactId>
+    <name>ddphin-base-common-spring-boot-autoconfigure</name>
 
     <dependencies>
         <!-- spring-boot-->
         <dependency>
             <groupId>com.github.ddphin</groupId>
-            <artifactId>ddphin-base-db</artifactId>
+            <artifactId>ddphin-base-common</artifactId>
         </dependency>
 
         <dependency>
