@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-public class CMessageConverterConfiguration extends WebMvcConfigurationSupport {
+public class CommonAutoConfiguration extends WebMvcConfigurationSupport {
     @Bean
     public CExceptionHandler cExceptionHandler() {
         return new CExceptionHandler();
