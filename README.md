@@ -22,8 +22,17 @@
 application.yml
     ```$xslt
     application:
-      version: 1.4.0  # 版本号
-      init: false     # 是否初始化
+        version: 1.4.0  # 版本号
+        init: false     # 是否初始化
+    spring:
+        datasource:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            url: jdbc:mysql://xxx.xxx.xxx.xxx:13306/xxx
+            username: xxx
+            password: xxx
+            admin-url: jdbc:mysql://xxx.xxx.xxx.xxx:13306
+            admin-username: xxx
+            admin-password: xxx              
     ```
 - 创建目录resources/db，存放数据库SQL文件
 - 初始化 
