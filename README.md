@@ -5,7 +5,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-common-spring-boot-starter</artifactId>
-                <version>1.0.5</version>
+                <version>1.0.6</version>
             </dependency>
 ```
 - 通用 HttpMessageConverter： FastJsonHttpMessageConverter
@@ -22,7 +22,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
-                <version>1.0.5</version>
+                <version>1.0.6</version>
             </dependency>
 ```
 - 配置
@@ -63,7 +63,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-es-spring-boot-starter</artifactId>
-                <version>1.0.5</version>
+                <version>1.0.6</version>
             </dependency>
 ```
 - 配置
@@ -113,7 +113,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-oss-spring-boot-starter</artifactId>
-                <version>1.0.5</version>
+                <version>1.0.6</version>
             </dependency>
 ```
 - 配置
