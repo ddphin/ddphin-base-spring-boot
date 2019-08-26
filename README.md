@@ -32,12 +32,10 @@ application.yml
     ```$xslt
     create table db_upgrade_log
     (
-        id bigint auto_increment
-            primary key,
+        id bigint auto_increment primary key,
         version varchar(32) not null,
         status int default 0 not null comment '0:u**pgrading 1:success 2:failed',
-        constraint db_upgrade_log_version_uindex
-            unique (version)
+        constraint db_upgrade_log_version_uindex unique (version)
     );
 
     ```
@@ -64,12 +62,10 @@ application.yml
     ```$xslt
     create table es_upgrade_log
     (
-        id bigint auto_increment
-            primary key,
+        id bigint auto_increment primary key,
         version varchar(32) not null,
         status int default 0 not null comment '0:upgrading 1:success 2:failed',
-        constraint es_upgrade_log_version_uindex
-            unique (version)
+        constraint es_upgrade_log_version_uindex unique (version)
     );
 
     ```
