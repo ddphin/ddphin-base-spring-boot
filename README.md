@@ -1,6 +1,6 @@
 # DDphin 通用基础工具
 
-## 工具类
+## 1. 工具类
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
@@ -9,7 +9,7 @@
             </dependency>
 ```
 
-## 数据库自动初始化和升级
+## 2. 数据库自动初始化和升级
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
@@ -17,7 +17,6 @@
                 <version>1.0.3</version>
             </dependency>
 ```
-### 使用
 - 配置
 application.yml
     ```$xslt
@@ -42,7 +41,7 @@ application.yml
 - 升级
 <br>resources/db目录下存放 upgrade-${version}.sql 文件
 
-## Elasticsearch 自动升级
+## 3. Elasticsearch 自动升级
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
@@ -92,7 +91,7 @@ application.yml
         - delete: your_index                 
     ```
 
-## Ali OSS 
+## 4. Ali OSS 
 ```$xslt
             <dependency>
                 <groupId>com.github.ddphin</groupId>
