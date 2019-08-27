@@ -8,6 +8,7 @@
                 <version>1.1.2</version>
             </dependency>
 ```
+
 - 通用 HttpMessageConverter： FastJsonHttpMessageConverter
 - 通用异常处理类：CExceptionHandler
 - 通用异常类：CException
