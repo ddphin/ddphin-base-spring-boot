@@ -5,7 +5,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-common-spring-boot-starter</artifactId>
-                <version>1.1.2</version>
+                <version>1.1.5</version>
             </dependency>
 ```
 
@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
-                <version>1.1.2</version>
+                <version>1.1.5</version>
             </dependency>
 ```
 - 配置
@@ -64,7 +64,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-es-spring-boot-starter</artifactId>
-                <version>1.1.2</version>
+                <version>1.1.5</version>
             </dependency>
 ```
 - 配置
@@ -114,7 +114,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-oss-spring-boot-starter</artifactId>
-                <version>1.1.2</version>
+                <version>1.1.5</version>
             </dependency>
 ```
 - 配置
