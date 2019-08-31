@@ -5,7 +5,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-common-spring-boot-starter</artifactId>
-                <version>1.1.5</version>
+                <version>1.1.6</version>
             </dependency>
 ```
 
@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
-                <version>1.1.5</version>
+                <version>1.1.6</version>
             </dependency>
 ```
 - 配置
@@ -64,7 +64,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-es-spring-boot-starter</artifactId>
-                <version>1.1.5</version>
+                <version>1.1.6</version>
             </dependency>
 ```
 - 配置
@@ -114,7 +114,7 @@ application.yml
             <dependency>
                 <groupId>com.github.ddphin</groupId>
                 <artifactId>ddphin-base-oss-spring-boot-starter</artifactId>
-                <version>1.1.5</version>
+                <version>1.1.6</version>
             </dependency>
 ```
 - 配置
@@ -132,3 +132,38 @@ application.yml
 - 接口：`POST: /oss/upload/image`
 <br>参数： `file` 
 <br>返回： `文件路径`
+
+
+## 5. Swagger Api 文档 
+```$xslt
+            <dependency>
+                <groupId>com.github.ddphin</groupId>
+                <artifactId>ddphin-base-swagger-spring-boot-starter</artifactId>
+                <version>1.1.6</version>
+            </dependency>
+```
+- 增加对枚举的支持
+<br>在任何对象的属性上使用注解将属性与枚举绑定`@BindEnum(YourEnum.class)`，文档在输出的时候，在描述文案中将添加所有枚举值
+    ```$xslt
+    @Data
+    public class DemoModel {
+        private Long id;
+        private String name;
+        @BindEnum(DemoModelStatusEnum.class)
+        private Integer status;
+    }
+    ```
+   - 如果是原生枚举，输出枚举格式为： 
+   <br>`[ordinal1：name1, ordinal2：name2, ordinal3：name3]`
+   - 如果是实现`CodeNameEnum`接口的枚举，输出枚举格式为： 
+   <br>`[code1：name1, code2：name2, code3：name3]`
+- 如果有权限限制，需要给相关URL配置访问权限，或者在界面添加授权参数
+<br>（如全局参数Header中添加Authorization为TOEKN）
+    ```$xslt
+    "/swagger-resources/**",
+    "/webjars/**",
+    "/v2/api-docs",
+    "/v2/api-docs-ext",
+    "/doc.html"
+    ```
+- 地址：`${HOST}/api/doc.html`
