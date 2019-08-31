@@ -32,32 +32,22 @@
         <version>1.1.6</version>
     </parent>
 
-    <artifactId>ddphin-base-db-spring-boot-samples</artifactId>
-    <name>ddphin-base-db-spring-boot-samples</name>
+    <artifactId>ddphin-base-swagger-spring-boot-samples</artifactId>
+    <name>ddphin-base-swagger-spring-boot-samples</name>
 
     <dependencies>
         <dependency>
             <groupId>com.github.ddphin</groupId>
-            <artifactId>ddphin-base-common</artifactId>
+            <artifactId>ddphin-base-swagger</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.ddphin</groupId>
-            <artifactId>ddphin-base-db-spring-boot-starter</artifactId>
+            <artifactId>ddphin-base-swagger-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
         </dependency>
 
     </dependencies>
