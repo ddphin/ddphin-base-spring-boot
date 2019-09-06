@@ -29,7 +29,7 @@
 
     <groupId>com.github.ddphin</groupId>
     <artifactId>ddphin-base-spring-boot</artifactId>
-    <version>1.1.7</version>
+    <version>1.1.8</version>
     <packaging>pom</packaging>
 
     <name>ddphin-base-spring-boot</name>
@@ -94,7 +94,7 @@
         <apache-httpcore.version>4.4.11</apache-httpcore.version>
         <apache-httpclient.version>4.5.9</apache-httpclient.version>
         <mysql.version>8.0.16</mysql.version>
-        <ddphin-base.version>1.1.7</ddphin-base.version>
+        <ddphin-base.version>1.1.8</ddphin-base.version>
     </properties>
 
     <dependencyManagement>
