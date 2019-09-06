@@ -106,6 +106,8 @@ application.yml
               index: your_index
             dest:
               index: your_index    
+            script:
+              code: ctx._source.field1 = ctx._source.remove("field2");
         - delete: your_index                 
     ```
 
